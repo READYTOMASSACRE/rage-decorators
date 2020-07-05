@@ -1,6 +1,6 @@
 {
   "name": "rage-decorators",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for RageMP API",
   "license": "MIT",
   "author": "READYTOMASSACRE",
@@ -24,6 +24,8 @@
     "build": "tsc",
     "build:check": "tsc --noEmit"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "prepare": "npm run build"
 }
