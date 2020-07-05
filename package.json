@@ -6,6 +6,14 @@
   "author": "READYTOMASSACRE",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/READYTOMASSACRE/rage-decorators.git"
+  },
+  "bugs": {
+    "url": "https://github.com/READYTOMASSACRE/rage-decorators/issues"
+  },
+  "homepage": "https://github.com/READYTOMASSACRE/rage-decorators#readme",
   "devDependencies": {
     "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s"
   },

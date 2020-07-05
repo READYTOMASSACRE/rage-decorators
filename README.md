@@ -7,9 +7,10 @@ A useful lightweight library which helps to registry server-side events, command
 
 # Installation
 
-via [npm](https://github.com/npm/cli):
+Via [npm](https://github.com/npm/cli):
 `$ npm i --save rage-decorators`
-via [yarn](https://yarnpkg.com/cli/install):
+
+Via [yarn](https://yarnpkg.com/cli/install):
 `$ yarn add rage-decorators`
 
 # Examples
