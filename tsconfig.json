@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "esnext",
+      "declaration": true,
+      "noImplicitAny": true,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "sourceMap": false,
+      "outDir": "lib/",
+      "strict": true, 
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
+      "noImplicitThis": false,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "**/*.spec.ts"]
+}

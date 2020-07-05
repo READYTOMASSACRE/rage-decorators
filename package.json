@@ -1,0 +1,20 @@
+{
+  "name": "rage-decorators",
+  "version": "1.0.0",
+  "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for RageMP API",
+  "license": "MIT",
+  "author": "READYTOMASSACRE",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "prepublish": "tsc",
+  "devDependencies": {
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit"
+  }
+}
