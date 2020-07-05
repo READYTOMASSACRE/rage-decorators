@@ -6,7 +6,6 @@
   "author": "READYTOMASSACRE",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "prepublish": "tsc",
   "devDependencies": {
     "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s"
   },
@@ -16,5 +15,7 @@
   "scripts": {
     "build": "tsc",
     "build:check": "tsc --noEmit"
-  }
+  },
+  "files": ["lib/**/*"],
+  "prepare": "npm run build"
 }
