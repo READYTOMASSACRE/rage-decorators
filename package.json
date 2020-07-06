@@ -1,6 +1,6 @@
 {
   "name": "rage-decorators",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A useful lightweight library which helps to registry server-side events, commands via decorators for RageMP API",
   "license": "MIT",
   "author": "READYTOMASSACRE",

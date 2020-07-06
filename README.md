@@ -1,5 +1,5 @@
 # rage-decorators
-A useful lightweight library which helps to registry server-side events, commands via decorators for RageMP API 
+A useful lightweight library which helps to registry **server-side/client-side** events, commands via [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) for RageMP API 
 
 * [Installation](#installation)
 * [Examples](#examples)
