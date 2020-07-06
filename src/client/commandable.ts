@@ -43,9 +43,14 @@ const onPlayerCommand = (context: any, commands: ICommand | ICommand[], group?: 
   const commandArgs = input.split(/[ ]+/)
   const commandName = commandArgs.shift()
 
+  // if we didn't get any command just return
   if (!commandName) return
+
+  // if it's group command and there is no handler for them just return
   if (group && group !== commandName) return
 
+  // handler for the  common commands
+  // otherwise handle group commands
   if (!Array.isArray(commands)) {
     const { cmd, callable, desc } = commands
 
@@ -54,12 +59,15 @@ const onPlayerCommand = (context: any, commands: ICommand | ICommand[], group?: 
 
     return context[callable](desc[descIndex], ...commandArgs)
   } else {
+    // get subcommand
     const subCommand = commandArgs.shift()
+
     // flat array of commands
     const cmdList = commands.reduce((carry, { cmd }) => carry.concat(cmd), [] as string[])
     // flat array of descriptions
     const descList = commands.reduce((carry, { desc }) => carry.concat(desc), [] as string[])
 
+    // if subcommand doesn't exists just show description
     if (!subCommand || cmdList.indexOf(subCommand) === -1) {
       descList.forEach(text => mp.gui.chat.push(text))
     } else {

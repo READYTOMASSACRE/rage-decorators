@@ -44,7 +44,6 @@ export const command = (
   // get a main cmd
   const mainCmd = group || cmds[0]
 
-  /** @todo seterror, setlocale */
   // throw erros if something has gone wrong
   if (!mainCmd) throw new Error("Wrong registry command")
   if (!group && registeredCommands.get(mainCmd)) throw new Error(`Duplicate command "${mainCmd}"`)
